@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header .logo{
+    color:white;
+    font-size: 28px;
+}
+
+/* #######################Container################################ */
+
+html{
+    font-size: 70%;
+}
+body{
+    font-family:'Montserrat', sans-serif;
+    line-height : 1.7;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1rem;
+    text-decoration: none;
+}
+p,li{
+    font-size:10px;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.15rem;
+}
+h1,h2,h3{
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.15rem;
+    font-weight: 500;
+}
+/* ########################### utility classses ####################################### */
+
+.bg-dark{
+    background-color: #263238;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.lg-heading{
+    font-size: 2.5rem;
+}
+.text-red{
+    color:#e63946;
+}
+.text-light{
+    color:#f4f4f4;
+}
+text-black{
+    color:#333333;
+}
+text-gray{
+    color:#555555;
+}
+/* ###################### Header Style######################################## */
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin:0.53m 0;
+    font-size: medium;
+}
+.btn-primary{
+    background-color: white;
+    border-radius: 100px;
+}
+.btn-primary:hover{
+    background-color: #ddd;
+}
+
+.header-content{
+    position: absolute;
+    /* border: 2px solid white; */
+    top:50%;
+    left:50%;            
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.header-content h1{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.header-content p{
+    text-transform: uppercase;
+    font-family:'Montserrat', sans-serif;
+}
+.header{
+    position: relative;
+    height: 95vh;
+    background-image: url('../Project/images/header-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    /* border: 1px solid black; */
+    padding: 1rem 20rem 1rem 3rem;
+}
+.navbar .logo{
+    float: left;
+    margin: auto;
+    padding-left: 230px;
+    color:white;
+}
+.navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.navbar a:link,
+.navbar a:visited{
+    color:#f4f4f4;
+}
+.navbar a:hover{
+    border-bottom: 1px solid white;
+    font-size: 150%;
+}
+.navbar::after{
+    content:'';
+    display: block;
+    clear:both;
+}
+.lg-heading{
+    color:black;
+    font-size: bolder,;
+}
+/*########################## SHOWCASE SECTION STYLING ############################*/
+.showcase{
+    background-color:#ddd;
+    padding:5rem 5rem;
+}
+.row{
+    height: 350px;
+    background-color: #f4f4f4;
+    /* border: 2px solid red;   */
+    box-shadow: 0px 0px 20px 0px #000;
+}
+.row1{
+    margin-bottom: 5rem;
+}
+.row1 .img-box,.row2 .text-box{
+    float:left;
+    width: 50%;
+    /* border: 2px solid white;*/
+    height: 100%;
+    font-size: 10px;
+}
+.row2 .img-box,.row1 .text-box{
+    float:right;
+    width: 50%;
+    /* border: 2px solid black;*/
+    height: 100%;
+    font-size: 14px;
+}
+.row1 .text-box,.row2 .text-box{
+    padding:2rem;
+}
+.row1 .img-box img{
+    width: 100%;
+    height: 100%;
+
+}
+.row2 .img-box img{
+    width: 100%;
+    height: 100%;
+}
+/* .row .row1,h2{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 550;
+} */
+.row .row1,p{
+font-family: 'Montserrat', sans-serif;
+text-align: left;
+font-size:12px;
+font-weight:300;
+letter-spacing: 0;
+}
+.btn-secondray{
+background-color: white;
+border: 2px solid red;
+border-radius: 1.5em;
+color:red;
+}
+.btn-secondray:hover{
+background-color: #fcf3f2;
+}
+/* ############################### FEATURES SECTION STYLING #################################### */
+.features{
+    padding:9rem 0;    
+}
+.box-wrapper{
+    /* border: 2px solid green; */
+    box-shadow: 5px 5px 10px 0px #000;
+}
+.box{
+    width: 33.3333%;
+    float:left;
+    /* border: 2px solid black; */
+    padding:2rem;
+    text-align: center;
+}
+.box-wrapper::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.box-1,.box-3{
+    background-color:#263238;
+    color:#fff;
+}
+.box-2{
+    background-color: #e63946;
+    color:#fff;
+}
+/* ######################### FOOTER STYLE ################################### */
+.footer{
+    background: #263238;
+    color:#f4f4f4;
+    padding:2rem;
+    text-align:center;
+}
+.footer,p{
+    text-align: center;
+}
+.social-media-links,i{
+    margin: 1rem;
+}
+/* ########################## ABOUT PAGE ##################################### */
+.about{
+    padding:4rem 23rem;
+}
+.about-heading{
+    border-bottom: 6px solid #e63948; 
+}
+/* #from 245 to 247 lines to get underline untill content */
+/* .about-heading::after{
+    content:'';
+    display:block;  ##############248 to 253 lines used for full line upto content
+    border: 3px solid #e63946;  
+    width: 110px;
+} */
+/* ##################### ABOUT WRAPPER ################################### */
+.about-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    /* border: 1px solid purple; */
+}
+.about,p{
+    text-align:start;
+    font-weight: 700;
+}
+/* #################################  COUNT STYLING ############################## */
+.counts{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid black; */
+    
+}
+.count-item1{
+    padding-left: 5rem;
+}
+.count-item4{
+    padding-right: 5rem;
+}
+span{
+    color: #e63946;
+    font-size: medium;
+    font-weight: bold;
+}
+/* ################################ CONTACT PAGE ######################################### */
+.contact-form{
+    padding:5rem 25rem;
+    /* font-size: 2rem; */
+    background: #f7f7f7;
+}
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.form-wrapper .company-add{
+  background: #fff;
+  /* border: 4px dotted green; */
+  width: 49%;
+  height: 760px;
+  float: left;
+}
+.company-add,i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.company-add,h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+.form-wrapper .company-add img{
+    max-width: 90%;
+    min-height: 14rem;
+    -o-object-fit: cover;
+}
+/* ####################### FORM STYLING ################################## */
+.form-wrapper .form{
+    /* box-sizing: border-box;
+    border: 2px dotted black; */
+    height: 760px;
+    font-size: 1.6rem;
+    /* border: 4px dotted black; */
+    width: 49%;
+    FLOAT:right;
+    padding: 1rem;
+}
+.form h1::after{
+    content: '';
+    display: block;
+    border: 2px solid #e63946;
+    width: 100%;
+}
+.form-wrapper label{
+    display: block;
+}
+.form-wrapper .form input{
+    padding:0.5rem;
+    width: 100%;
+}
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+.form-wrapper .form lable::after{
+    content: '';
+    color:#e63946;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding:1rem
+}
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline:none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

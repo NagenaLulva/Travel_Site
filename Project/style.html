@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Webiste</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header .logo{
+            color:white;
+            font-size: 28px;
+        }
+        
+        /* #######################Container################################ */
+
+        html{
+            font-size: 70%;
+        }
+        body{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height : 1.7;
+        }
+        ul li{
+            list-style: none;
+        }
+        a{
+            font-size: 1rem;
+            text-decoration: none;
+        }
+        p,li{
+            font-size:10px;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.15rem;
+        }
+        h1,h2,h3{
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.15rem;
+            font-weight: 500;
+        }
+        /* ########################### utility classses ####################################### */
+
+
+        .container{
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .lg-heading{
+            font-size: 2.5rem;
+        }
+        .text-red{
+            color:#e63946;
+        }
+        .text-light{
+            color:#f4f4f4;
+        }
+        text-black{
+            color:#333333;
+        }
+        text-gray{
+            color:#555555;
+        }
+/* ######################Header Style######################################## */
+        .btn{
+            display: inline-block;
+            padding: 0.5em 1.5em;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin:0.53m 0;
+            font-size: medium;
+        }
+        .btn-primary{
+            background-color: white;
+            border-radius: 100px;
+        }
+        .btn-primary:hover{
+            background-color: #ddd;
+        }
+
+        .header-content{
+            position: absolute;
+            /* border: 2px solid white; */
+            top:50%;
+            left:50%;            
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .header-content h1{
+            text-transform: uppercase;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 700;
+        }
+        .header-content p{
+            text-transform: uppercase;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .header{
+            position: relative;
+            height: 95vh;
+            background-image: url('../Project/images/header-image.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .navbar{
+            /* border: 1px solid white; */
+            padding: 1rem;    
+        }
+        .header .navbar .logo{
+            float: left;
+            margin: auto;
+            padding-left: 230px;
+        }
+        .header .navbar .nav-items{
+            float: right;
+            margin-top: 1rem;
+        }
+        .header .navbar .nav-item{
+            display: inline-block;
+            padding: 1rem;
+            text-transform: uppercase;
+        }
+        .navbar a:link,
+        .navbarn a:visited{
+            color:#f4f4f4;
+        }
+        .navbar a:hover{
+            border-bottom: 1px solid white;
+            font-size: 150%;
+        }
+        .navbar::after{
+            content:'';
+            display: block;
+            clear:both;
+        }
+        .lg-heading{
+            color:black;
+            font-size: bolder,;
+        }
+/*########################## SHOWCASE SECTION STYLING ############################*/
+        .showcase{
+            background-color:#ddd;
+            padding:5rem 5rem;
+        }
+        .row{
+            height: 350px;
+            background-color: #f4f4f4;
+            /* border: 2px solid red;   */
+            box-shadow: 0px 0px 20px 0px #000;
+        }
+        .row1{
+            margin-bottom: 5rem;
+        }
+        .row1 .img-box,.row2 .text-box{
+            float:left;
+            width: 50%;
+            /* border: 2px solid white;*/
+            height: 100%;
+            font-size: 14px;
+        }
+        .row2 .img-box,.row1 .text-box{
+            float:right;
+            width: 50%;
+            /* border: 2px solid black;*/
+            height: 100%;
+            font-size: 14px;
+        }
+        .row1 .text-box,.row2 .text-box{
+            padding:2rem;
+        }
+        .row1 .img-box img{
+            width: 100%;
+            height: 100%;
+    
+        }
+       .row2 .img-box img{
+            width: 100%;
+            height: 100%;
+       }
+       /* .row .row1,h2{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 550;
+       } */
+       .row .row1,p{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: left;
+        font-size:12px;
+        font-weight:300;
+        letter-spacing: 0;
+       }
+       .btn-secondray{
+        background-color: white;
+        border: 2px solid red;
+        border-radius: 1.5em;
+        color:red;
+       }
+       .btn-secondray:hover{
+        background-color: #fcf3f2;
+       }
+/* ############################### FEATURES SECTION STYLING #################################### */
+        .features{
+            padding:9rem 0;    
+        }
+        .box-wrapper{
+            /* border: 2px solid green; */
+            box-shadow: 5px 5px 10px 0px #000;
+        }
+        .box{
+            width: 33.3333%;
+            float:left;
+            /* border: 2px solid black; */
+            padding:2rem;
+            text-align: center;
+        }
+        .box-wrapper::after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+        .box-1,.box-3{
+            background-color:#263238;
+            color:#fff;
+        }
+        .box-2{
+            background-color: #e63946;
+            color:#fff;
+        }
+/* ######################### FOOTER STYLE ################################### */
+        .footer{
+            background: #263238;
+            color:#f4f4f4;
+            padding:2rem;
+            text-align:center;
+        }
+        .footer,p{
+            text-align: center;
+        }
+        .social-media-links{
+            margin: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo lg-heading text-light" >WT</h1>
+            <ul class="nav-items">
+            <li class="nav-item"><a href="style.html" class="text-light ">Home</a></li>
+            <li class="nav-item"><a href="aboutpage.html" class="text-light">About</a></li>
+            <li class="nav-item"><a href="Contactpage.html" class="text-light">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="header-content">
+        <h1 class="text-light">travel the world</h1>
+        <p class="text-light">travel the world, experience the greateness, its the best gift given by nature</p>
+        <a href="#explore-place" class="btn btn-primary text-red">Explore places</a>
+    </div>
+</header>
+    <section class="showcase" id="explore-place">
+        <div class="container">
+            <div class="row row1">
+                <div class="img-box">
+                    <img src="../Project/images/travel-image1.jpg" alt="imgae">
+                </div>
+                <div class="text-box">
+                    <h2 class="lg-heading text-black">DEGANVY, U.K</h2>
+                    <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi consequatur velit consequuntur nobis ipsum. Cum modi molestiae hic, eos blanditiis ipsam deleniti animi ab minima optio aliquid vero cupiditate assumenda, laboriosam unde dolore sed adipisci tempore ad consequuntur quod maxime! Reiciendis est consectetur exercitationem hic quia beatae facere illo itaque, fugiat quam distinctio illum blanditiis accusantium in adipisci unde corporis voluptatum. Fuga et iste minima quaerat similique est aspernatur quis vero, nostrum consequuntur perferendis corporis incidunt corrupti iure porro omnis. Reiciendis, voluptas dignissimos? Exercitationem soluta repudiandae obcaecati a voluptatem explicabo est, architecto consequatur suscipit modi, totam velit commodi nisi dolores. Minima, quaerat eum quam assumenda, soluta voluptatem, asperiores vitae velit unde explicabo cupiditate. Consectetur illo totam at ipsum, sed eos minima cupiditate molestias placeat ex nemo quis maxime hic consequatur. Reprehenderit corrupti beatae quibusdam tempore illum veniam libero ad, incidunt consequuntur natus..... </p>
+                    <a href="homepage.html" class="btn btn-secondray">More</a>
+                </div>
+            </div>
+            <div class="row row2">
+                <div class="img-box">
+                    <img src="../Project/images/travel-image3.jpg" alt="image">
+                </div>
+                <div class="text-box">
+                    <h2 class="lg-heading text-black">DESERT. EGYPT</h2>
+                    <p class="text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ut delectus voluptates. Magnam, dignissimos molestias dicta, doloribus, facere dolor quibusdam nobis accusamus minus odit debitis placeat distinctio! Atque, eaque recusandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A delectus magni velit omnis nam. Ratione ullam neque necessitatibus dolorum magnam rem consectetur soluta. Recusandae eveniet commodi possimus veritatis, nemo facere veniam, animi deserunt quidem culpa enim quasi incidunt nisi. Necessitatibus commodi quia assumenda cumque quam cum, corporis architecto, eum ratione ea dolor, ad ab enim ipsam quaerat natus. Consequuntur vero autem nisi asperiores blanditiis voluptas non dolores quia maxime recusandae eveniet saepe eligendi cumque hic, sapiente officiis deleniti quam quae? Voluptate reprehenderit nihil esse dolores accusantium perferendis ad ipsa quam, deleniti eligendi delectus quod debitis consequatur culpa iusto, possimus quisquam officiis magni ea! Ullam qui ducimus dolorem, expedita quis enim culpa quas dolor quam ipsa nihil. Laudantium illum expedita hic doloribus, error asperiores magni officia debitis natus placeat vitae harum.... </p>
+                    <a href="homepage.html" class="btn btn-secondray">More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <div class="box-wrapper">
+                <div class="box box-1">
+                    <h2 class="md-heading">Adventures</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nam at quis, tempore minus blanditiis mollitia pariatur eaque ipsam provident.</p>
+                </div>
+                <div class="box box-2">
+                    <h2 class="md-heading">Less Price</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ut rem cum tempora velit maxime, accusamus odit mollitia labore doloribus.</p>
+                </div>
+                <div class="box box-3">
+                    <h2 class="md-heading">Experience</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, saepe? Itaque repellat corporis obcaecati nemo voluptas, optio quia nam recusandae!</p>
+                </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="social-media-links">
+            <i class="fab fa-facebook fa-4x"></i>
+            <i class="fab fa-twitter fa-4x"></i>
+            <i class="fab fa-instagram fa-4x"></i>
+        </div>
+        <p>World Travel &copy; 2020,All Right Reserved</p>
+    </footer>
+</body>
+</html>
